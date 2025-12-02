@@ -1,4 +1,4 @@
-//to display in paragraph
+/* to display in paragraph
 const inpt = document.getElementById('inpt');
 const show = document.getElementById('show');
 const showw = document.getElementById('showw');
@@ -28,20 +28,24 @@ const form = document.getElementById('todo-form');
             }
             showw.innerHTML = input.value;
 
+            // Create delete button
+const deleteButton = document.createElement('button');
+deleteButton.innerText = "Delete";
+deleteButton.style.marginLeft = "10px";
+
+// Add delete button to list item
+listItem.appendChild(deleteButton);
+
+// Delete functionality
+deleteButton.addEventListener('click', function () {
+    listItem.remove();
+});
+
 
         });
 
 
-//To delete task
-const btn = document.getElementById('btn')
-        but.addEventListener('click', function() {
-           btn.addEventListener('click', function() {
 
-                but.innerHTML = '';
-            })         
-            
-           alert("working")
-        })
 
 
 
@@ -50,6 +54,38 @@ const btn = document.getElementById('btn')
 //            if (event.target.tagName === 'LI') {
 //               event.target.classList.toggle('completed');
 //          }
-//      });
+//      });*/
 
+ //To add task
+const form = document.getElementById('todo-form');
+const input = document.getElementById('todo-input');
+const list = document.getElementById('todo-list');
 
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    if (input.value !== '') {
+        const listItem = document.createElement('li');
+        const but = document.createElement('button');
+        but.innerHTML = input.value;
+
+        listItem.appendChild(but);
+        
+        // NEW — delete button
+        const deleteButton = document.createElement('button');
+        deleteButton.innerText = "Delete";
+        deleteButton.style.marginLeft = "10px";
+        listItem.appendChild(deleteButton);
+
+        // Add list item to list
+        list.appendChild(listItem);
+
+        // Clear input
+        input.value = '';
+
+        // DELETE FUNCTION
+        deleteButton.addEventListener('click', function () {
+            listItem.remove();
+        });
+    }
+});
