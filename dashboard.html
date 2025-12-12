@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
     <title>To do app</title>
-    <script src="https://cdn.tailwindcss.com" ></script>
+    <!--script src="https://cdn.tailwindcss.com" ></script-->
 </head>
 <body class="bg-gray-100 min-h-screen">
     <div class="container bg-white rounded shadow  min-h-screen 
@@ -12,15 +13,17 @@
              items-start">
 
         <!-- SECTION 1 -->
-        <div class="bg-black   shadow-md w-[5%]">
+        <div class="bg-black   shadow-md w-[5%] Nav">
             <h1 class="text-2xl font-bold text-gray-800 mb-3">Section One</h1>
             <p class="text-gray-600">
                 This is the first section. Add any content you want here.
-            </p>
+            </p> 
+            <i data-feather="home"></i>
+
         </div>
 
         <!-- SECTION 2 -->
-        <div class="bg-gray  shadow-md w-[25%] ">
+        <div class="bg-gray  shadow-md w-[25%] sideNav">
             <h1 class="text-2xl font-bold text-gray-800 mb-3">Section Two</h1>
             <p class="text-gray-600">
                 This is the second section. You can put forms, lists, or text.
@@ -34,10 +37,12 @@
           <ul id="todo-list">
 
           </ul>
+          <i data-feather="home"></i>
+
         </div>
 
         <!-- SECTION 3 -->
-        <div class="bg-white  shadow-md w-[70%] flex-1 ">
+        <div class="bg-white  shadow-md w-[70%] flex-1 dashNav">
             <h1 class="text-2xl font-bold text-gray-800 mb-3">Section Three</h1>
             <p class="text-gray-600">
                 This is the third section. Buttons, tasks, images, anything.
@@ -49,7 +54,8 @@
 
     </div>
    
-    
+    <script src="https://unpkg.com/feather-icons"></script>
+
 
     <script src="dashboard.js">
         

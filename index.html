@@ -2,25 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Signup</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com" ></script>
+
 </head>
-<body>
-    <div class="container">
-        <h1 class="text-2xl font-bold text-gray-800 mb-3">Signup Page</h1>
-        <form id="signup-form">
-            <label for="username">Username:</label>
-            <input type="text" id="name" name="name" required>
+<body class="bg-blue">
+    <div class="container bg-red">
+        <div class="content">
+          <h1 class=" heading text-2xl font-bold text-gray-800 mb-3">Sign up to use Todoapp </h1>
+          <form id="signup-form">
+            <input type="text" id="name" name="name" placeholder="Full name" required>
             <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
             <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
             <br>
             <button type="submit">Sign Up</button>
-        </form>
-        <p id="msg"></p>
+         </form>
+         <p>Already created an account?<a href="http://"> Sign in</a></p>
+        </div>
     </div>
     
     <script src="index.js"></script>

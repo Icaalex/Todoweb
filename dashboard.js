@@ -1,3 +1,5 @@
+
+feather.replace()
 /* to display in paragraph
 const inpt = document.getElementById('inpt');
 const show = document.getElementById('show');

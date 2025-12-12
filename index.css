@@ -1,0 +1,83 @@
+body{
+    background-color: #353535;
+    margin: 0;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.container{
+    height: 1vh;
+    padding: 5rem 0;
+    
+
+}
+.content{
+    margin: auto;
+    background: #eee;
+    box-sizing: border-box;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.heading{
+    color: #323232;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+form{
+    margin: 3rem;
+    text-align: center;
+     font-size: 18px;
+    color: #323232;
+    align-content:start;
+}
+
+form label{
+   
+
+}
+form input{
+    box-shadow: #353535;
+    border: none;
+    margin:2rem;
+    padding: 20px;
+    width: 350px;
+    
+}
+
+form button{
+    background-color: #323232;
+    width: 400px;
+    padding: 20px;
+    border: none;
+    color: #eee;
+}
+@media only screen and (max-width:1000px) {
+    
+    form input{
+    box-shadow: #353535;
+    border: none;
+    margin:2rem;
+    padding: 20px;
+    width: 200px;
+    
+ }
+ body{
+    background-color: #eee;
+    margin: 0;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+
+ }
+ form button{
+    background-color: #323232;
+    width: 200px;
+    border: none;
+    padding: 20px;
+    color: #eee;
+ }
+
+}

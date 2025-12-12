@@ -1,0 +1,45 @@
+body{
+    background-color: #353535;
+    margin: 0;
+    font-family:  'Lucida Sans', Arial, sans-serif;
+
+}
+
+.feather {
+  stroke: white;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.Nav{
+    background-color: black;
+    width: 5%;
+}
+
+.sideNav{
+    background-color: #808080;
+    width: 25%;
+
+}
+.dashNav{
+    background-color: white;
+    width: 70%;
+}
+
+@media only screen and (max-width:1000px) {
+    .container{
+        flex-direction: column;
+    }
+    .Nav, .sideNav, .dashNav{
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+}

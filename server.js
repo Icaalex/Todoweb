@@ -47,3 +47,8 @@ app.post("/api/users/signup", async (req, res) => {
 });
 
 app.listen(4000, () => console.log("Auth server running on port 4000"));
+
+
+//https://chatgpt.com/gg/v/693255cb41048192b082643db019b862?token=P8p_sel98oPyHKoDVU83bg
+
+//https://chatgpt.com/share/69325660-d04c-800b-8d34-3dc0c79f9189
