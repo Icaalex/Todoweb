@@ -1,5 +1,12 @@
+// re-render feather icons
 
-feather.replace()
+feather.replace();
+
+import { Sidebar } from "../components/sidebar.js";
+
+document.getElementById("sidebar-container").innerHTML = Sidebar("projects");
+
+
 /* to display in paragraph
 const inpt = document.getElementById('inpt');
 const show = document.getElementById('show');
