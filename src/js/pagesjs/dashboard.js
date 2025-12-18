@@ -6,6 +6,10 @@ import { Sidebar } from "../components/sidebar.js";
 
 document.getElementById("sidebar-container").innerHTML = Sidebar("projects");
 
+import { Navbar } from "../components/navbar.js";
+
+document.getElementById("navbar").innerHTML = Navbar("projects");
+
 
 /* to display in paragraph
 const inpt = document.getElementById('inpt');
