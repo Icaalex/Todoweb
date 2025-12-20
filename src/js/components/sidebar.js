@@ -1,11 +1,11 @@
 // components/sidebar.js
-export function Sidebar(active = "projects") {
+export function Sidebar() {
   return `
     <aside class="sidebar">
-      <div class="logo">☰</div>
+      <div class="logo"><a href="../pages/dashboard.html" class="nav-item ">☰</a></div>
 
       <nav class="nav">
-        <a href="dashboard.html" class="nav-item ${active === "projects" ? "active" : ""}">
+        <a href="../pages/projects.html" class="nav-item >
           <i data-feather="grid"></i>
           <span>Projects</span>
         </a>

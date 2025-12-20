@@ -1,8 +1,8 @@
-export function Navbar(title = "projects") {
+export function Navbar() {
   return `
     <header class="navbar">
       <div class="nav-left">
-        <h1 class="nav-title">${title}</h1>
+        <h1 class="nav-title">TodoLy</h1>
       </div>
 
       <div class="nav-center">

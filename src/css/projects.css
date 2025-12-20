@@ -1,0 +1,108 @@
+body{
+    background-color: #353535;
+    margin: 0;
+    font-family:  'Lucida Sans', Arial, sans-serif;
+
+}
+
+.feather {
+  stroke: #ccc;
+  font-size: 18px;
+}
+
+.projects-page {
+  padding: 1.5rem;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.projects-header h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.add-project-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.add-project-btn svg {
+  width: 16px;
+  height: 16px;
+  stroke: white;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+}
+
+.project-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-dot {
+  width: 10px;
+  height: 10px;
+  background: #6366f1;
+  border-radius: 50%;
+}
+
+.project-name {
+  font-weight: 500;
+  color: #111827;
+}
+
+.project-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-count {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: #6b7280;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
